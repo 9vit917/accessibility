@@ -256,7 +256,7 @@ h3{
 }
 
 .percentage {
-  fill: #043c63;
+  color: #043c63;
   font-family: 'SemiBold';
   font-size: 6pt;
   text-anchor: middle;
@@ -264,7 +264,7 @@ h3{
 }
 
 .points{
-  fill: #043c63;
+  color: #043c63;
   font-family: 'Regular';
   font-size: 3pt;
   text-anchor: middle;
@@ -345,7 +345,7 @@ h3{
 
 /* Adaptation for mobile */
 @media screen and (max-width: 600px) {
-  #sidebar nav{
+  .topnav nav{
     display: none;
   }
   .re-purchase{
