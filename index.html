@@ -76,9 +76,7 @@
                             <li class="product-item">
                                 <img src="static/images/product-image.jpg" alt="Photo of product on order details." />
                                 <div class="product-description">
-                                    <a href="">
-                                        <h3>[Product Name Lorem ipsum dolor sit amet]</h3>
-                                    </a>
+                                        <h3><a href="">[Product Name Lorem ipsum dolor sit amet]</a></h3>
                                     <p>
                                         <del>$18.99</del>
                                         <span>$12.99</span>
@@ -92,11 +90,13 @@
                                 </div>
                                 <div class="re-purchase">
                                     <div class="counter">
-                                        <button class="arrow arrow-left" type="button" onclick="decrementCounter(this)">
+                                        <button class="arrow arrow-left" id="dec1" type="button" onclick="decrementCounter(this)">
                                             -
                                         </button>
-                                        <input type="number" step="1" min="0" max="10" pattern=»[0-9]*» value="1">
-                                        <button class="arrow arrow-right" type="button"
+                                        <input type="number" aria-labelledby="inc1 dec1" step="1" min="0" max="10" value="1">
+                                        <button class="arrow arrow-right" 
+                                            id="inc1"
+                                            type="button"
                                             onclick="incrementCounter(this)">
                                             +
                                         </button>
@@ -114,9 +114,7 @@
                             <li class="product-item" >
                                 <img src="static/images/product-image.jpg" alt="Photo of product on order details." />
                                 <div class="product-description">
-                                    <a href="">
-                                        <h3>[Product Name Lorem ipsum dolor sit amet]</h3>
-                                    </a>
+                                        <h3><a href="">[Product Name Lorem ipsum dolor sit amet]</a></h3>
                                     <p>
                                         <del>$18.99</del>
                                         <span>$12.99</span>
@@ -130,11 +128,11 @@
                                 </div>
                                 <div class="re-purchase">
                                     <div class="counter">
-                                        <button class="arrow arrow-left" type="button" onclick="decrementCounter(this)">
+                                        <button class="arrow arrow-left" id="dec2" type="button" onclick="decrementCounter(this)">
                                             -
                                         </button>
-                                        <input type="number" step="1" min="0" max="10" pattern=»[0-9]*» value="1">
-                                        <button class="arrow arrow-right" type="button"
+                                        <input aria-labelledby="inc2 dec2" type="number" step="1" min="0" max="10" value="1">
+                                        <button class="arrow arrow-right" id="inc2" type="button"
                                             onclick="incrementCounter(this)">
                                             +
                                         </button>
@@ -152,9 +150,7 @@
                             <li class="product-item">
                                 <img src="static/images/product-image.jpg" alt="Photo of product on order details." />
                                 <div class="product-description">
-                                    <a href="">
-                                        <h3>[Product Name Lorem ipsum dolor sit amet]</h3>
-                                    </a>
+                                    <h3><a href=""></a>[Product Name Lorem ipsum dolor sit amet]</a></h3>
                                     <p>
                                         <del>$18.99</del>
                                         <span>$12.99</span>
@@ -168,11 +164,11 @@
                                 </div>
                                 <div class="re-purchase">
                                     <div class="counter">
-                                        <button class="arrow arrow-left" type="button" onclick="decrementCounter(this)">
+                                        <button class="arrow arrow-left" id="dec3" type="button" onclick="decrementCounter(this)">
                                             -
                                         </button>
-                                        <input type="number" step="1" min="0" max="10" pattern=»[0-9]*» value="1">
-                                        <button class="arrow arrow-right" type="button"
+                                        <input aria-labelledby="inc3 dec3" type="number" step="1" min="0" max="10" value="1">
+                                        <button id="inc3" class="arrow arrow-right" type="button"
                                             onclick="incrementCounter(this)">
                                             +
                                         </button>
@@ -194,7 +190,11 @@
             <section class="counting">
                     <div >
                         <h4>Rewards Points</h4>
-                        <svg viewBox="0 0 36 36" focusable="false" class="circular-chart">
+                        <svg viewBox="0 0 36 36" role="img" aria-labelledby="title desc" focusable="false" class="circular-chart">
+                            <title id="title">
+                                Points
+                            </title>
+                            <desc id="desc">Pie graphs with a blue border</desc>
                             <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845
                               a 15.9155 15.9155 0 0 1 0 31.831
                               a 15.9155 15.9155 0 0 1 0 -31.831" />

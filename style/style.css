@@ -173,7 +173,6 @@ h3{
   .button-purchase{
     font: inherit;
     color: inherit;
-    outline: none;
     border: none;
     border: 1px solid #3370a2;
     height: 40px;
@@ -202,7 +201,6 @@ h3{
     font-size: 18pt;
     font-family: 'Regular';
     width: 60px;
-    outline: none;
     border: none;
     border-top: 1px solid #666666;
     border-bottom: 1px solid #666666;
@@ -220,7 +218,6 @@ h3{
     border: 1px solid #666666;
     font: inherit;
     color: inherit;
-    outline: none;
     font-size: 18pt;
     padding: 0 17px;
     font-family: 'SemiBold';
@@ -320,7 +317,6 @@ h3{
 .dropdown .dropbtn {
   font-size: 17px; 
   border: none;
-  outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
