@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order Details</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+        </header>
+        <nav aria-label="Breadcrumb" class="breadcrumb mobile">
+            <a href="#">Back to Order History</a>
+        </nav>
+        <nav aria-label="Breadcrumb" class="breadcrumb desctop">
+            <ul>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Account Home</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a class="active" aria-current="page">Order Ditails</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>
+                Order Ditails
+            </h1>
+            <article class="content">
+                <aside id="sidebar" class="topnav responsive">
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <nav role="complementary" aria-label="Sidebar">
+                        <ul>
+                            <li><a href="#">Account Home</a></li>
+                            <li><a class="active" aria-current="page">Order History</a></li>
+                            <li><a href="#">Wish List</a></li>
+                            <li><a href="#">Email and Pasword</a></li>
+                            <li><a href="#">Address Book</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                <section class="main-content">
+                    <section class="order-information">
+                        <div class="order-information-item">
+                            <strong>Order Number</strong>
+                            <span>789067891276</span>
+                        </div>
+                        <div class="order-detail">
+                            <div class="order-information-item">
+                                <strong>Order Date</strong>
+                                <time datetime="2018-02-23">February 23, 2018</time>
+                            </div>
+                            <div class="order-information-item">
+                                <strong>Total</strong>
+                                <span>$41.31</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <ul>
+                            <li class="product-item">
+                                <img src="static/images/product-image.jpg" alt="Photo of product on order details." />
+                                <div class="product-description">
+                                    <a href="">
+                                        <h3>[Product Name Lorem ipsum dolor sit amet]</h3>
+                                    </a>
+                                    <p>
+                                        <del>$18.99</del>
+                                        <span>$12.99</span>
+                                    </p>
+                                    <p>
+                                        SALE <span>$10.99</span>
+                                    </p>
+                                    <div class="productRate">
+                                        <div style="width: 64%"></div>
+                                    </div>
+                                </div>
+                                <div class="re-purchase">
+                                    <div class="counter">
+                                        <button class="arrow arrow-left" type="button" onclick="decrementCounter(this)">
+                                            -
+                                        </button>
+                                        <input type="number" step="1" min="0" max="10" pattern=»[0-9]*» value="1">
+                                        <button class="arrow arrow-right" type="button"
+                                            onclick="incrementCounter(this)">
+                                            +
+                                        </button>
+                                    </div>
+                                    <div class="re-purchase-activity">
+                                        <button class="button-purchase">
+                                            Buy Again
+                                        </button>
+                                        <p>
+                                            Current Price <span class="re-purchase-price">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <img src="static/images/product-image.jpg" alt="Photo of product on order details." />
+                                <div class="product-description">
+                                    <a href="">
+                                        <h3>[Product Name Lorem ipsum dolor sit amet]</h3>
+                                    </a>
+                                    <p>
+                                        <del>$18.99</del>
+                                        <span>$12.99</span>
+                                    </p>
+                                    <p>
+                                        SALE <span>$10.99</span>
+                                    </p>
+                                    <div class="productRate">
+                                        <div style="width: 64%"></div>
+                                    </div>
+                                </div>
+                                <div class="re-purchase">
+                                    <div class="counter">
+                                        <button class="arrow arrow-left" type="button" onclick="decrementCounter(this)">
+                                            -
+                                        </button>
+                                        <input type="number" step="1" min="0" max="10" pattern=»[0-9]*» value="1">
+                                        <button class="arrow arrow-right" type="button"
+                                            onclick="incrementCounter(this)">
+                                            +
+                                        </button>
+                                    </div>
+                                    <div class="re-purchase-activity">
+                                        <button class="button-purchase">
+                                            Buy Again
+                                        </button>
+                                        <p>
+                                            Current Price <span class="re-purchase-price">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-item">
+                                <img src="static/images/product-image.jpg" alt="Photo of product on order details." />
+                                <div class="product-description">
+                                    <a href="">
+                                        <h3>[Product Name Lorem ipsum dolor sit amet]</h3>
+                                    </a>
+                                    <p>
+                                        <del>$18.99</del>
+                                        <span>$12.99</span>
+                                    </p>
+                                    <p>
+                                        SALE <span>$10.99</span>
+                                    </p>
+                                    <div class="productRate">
+                                        <div style="width: 64%"></div>
+                                    </div>
+                                </div>
+                                <div class="re-purchase">
+                                    <div class="counter">
+                                        <button class="arrow arrow-left" type="button" onclick="decrementCounter(this)">
+                                            -
+                                        </button>
+                                        <input type="number" step="1" min="0" max="10" pattern=»[0-9]*» value="1">
+                                        <button class="arrow arrow-right" type="button"
+                                            onclick="incrementCounter(this)">
+                                            +
+                                        </button>
+                                    </div>
+                                    <div class="re-purchase-activity">
+                                        <button class="button-purchase">
+                                            Buy Again
+                                        </button>
+                                        <p>
+                                            Current Price <span class="re-purchase-price">$12.99</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+            </article>
+            <section class="counting">
+                    <div >
+                        <h4>Rewards Points</h4>
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845
+                              a 15.9155 15.9155 0 0 1 0 31.831
+                              a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="-18" y="18.35" class="percentage">75</text>
+                            <text x="-18" y="22.35" class="points">Poins</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Payment Method</h4>
+                        <p>
+                            <img src="static/images/Visa-icon.png" alt="payment method like as visa card">
+                            <span>**** **** **** 2233</span>
+                        </p>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h5>Subtotal</h5>
+                                </td>
+                                <td>
+                                    <span>
+                                        $38.91
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Taxes</h5>
+                                </td>
+                                <td>
+                                    <span>
+                                        $2.34
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Shipping</h5>
+                                    <span>Standart</span>
+                                </td>
+                                <td>
+                                    <span>
+                                        $4.91
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Promo</h5>
+                                    <span>SPRINGSHIP</span>
+                                </td>
+                                <td>
+                                    <span>
+                                        $4.91
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Total</h5>
+                                </td>
+                                <td>
+                                    <span>
+                                        $41.31
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
