@@ -26,7 +26,7 @@ del {
   display: block;
 }
 
-.desctop {
+.desktop {
   display: block;
 }
 
@@ -380,7 +380,7 @@ h2 a:hover{
     padding-right: 0;
   }
 
-  .desctop {
+  .desktop {
     display: none;
   }
 
